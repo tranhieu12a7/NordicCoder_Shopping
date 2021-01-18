@@ -29,6 +29,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
 
+  vietinfo_dev_core:
+    path: ../../vietinfo/vietinfo_dev_core
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
