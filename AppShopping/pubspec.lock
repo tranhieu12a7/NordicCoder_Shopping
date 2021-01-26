@@ -318,9 +318,9 @@ packages:
   vietinfo_dev_core:
     dependency: "direct main"
     description:
-      path: "../../vietinfo/vietinfo_dev_core"
-      relative: true
-    source: path
+      name: vietinfo_dev_core
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.0.4"
   win32:
     dependency: transitive
