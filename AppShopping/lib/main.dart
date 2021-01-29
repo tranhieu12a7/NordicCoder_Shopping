@@ -1,4 +1,5 @@
 import 'package:AppShopping/home/bloc/home_bloc.dart';
+import 'package:AppShopping/home/tabbar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vietinfo_dev_core/vietinfo_dev_core.dart';
@@ -6,25 +7,25 @@ import 'package:vietinfo_dev_core/vietinfo_dev_core.dart';
 import 'home/page/home_page.dart';
 void main() {
   runApp(MyApp());
+  VietInfoDev.init();
 }
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
-    VietInfoDev.init(context);
-
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: BlocProvider(
-        create: (context)=>HomeBloc(),
-        child: HomePage(),
-      ),
+      home: TabBarWidget(),
+
+      // BlocProvider(
+      //   create: (context)=>HomeBloc(),
+      //   child: HomePage(),
+      // ),
     );
   }
 }

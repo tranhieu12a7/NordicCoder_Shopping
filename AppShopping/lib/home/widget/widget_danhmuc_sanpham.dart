@@ -48,9 +48,11 @@ class WidgetDanhMucSanPham extends StatelessWidget {
         ),
         Container(
           width: core.screenSize.width,
+          color: Colors.white,
           child: Center(
             child: Wrap(
               children: getListWidget(),
+              alignment: WrapAlignment.spaceAround,
             ),
           ),
         )
@@ -72,7 +74,7 @@ class WidgetDanhMucSanPham extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         BlocProvider.of<HomeBloc>(buildContext)
-            .callNavigatorDanhSachSanPham(buildContext);
+            .callNavigatorDanhSachSanPham(context: buildContext,data: data,title: data.name);
       },
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -82,8 +84,8 @@ class WidgetDanhMucSanPham extends StatelessWidget {
               borderRadius: BorderRadius.circular(5.0),
               child: Image(
                 image: NetworkImage(CoreUrlImage + data.image),
-                width: widtImage,
-                height: widtImage,
+                width: widtImage/2,
+                height: widtImage/2,
                 fit: BoxFit.cover,
               ),
             ),
