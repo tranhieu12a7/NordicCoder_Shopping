@@ -33,12 +33,12 @@ dependencies:
   cupertino_icons: ^1.0.0
   #flushbar
   flushbar: ^1.10.4
-#  vietinfo_dev_core: ^0.0.5
+  vietinfo_dev_core: ^0.0.5
 #  vietinfo_dev_core:
 #    git:
 #      url: https://github.com/tranhieu12a7/vietinfo/tree/main/vietinfo_dev_core
-  vietinfo_dev_core:
-    path: ../../vietinfo/vietinfo_dev_core
+#  vietinfo_dev_core:
+#    path: ../../vietinfo/vietinfo_dev_core
 
 dev_dependencies:
   flutter_test:
